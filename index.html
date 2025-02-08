@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link id="theme-stylesheet" rel="stylesheet" href="style.css"> -->
+    <link id="theme-stylesheet" rel="stylesheet" href="lightMode.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Key Statistics</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+                <button id="dark-mode-toggle" class="mode-button">☀️</button>
+                <i class="bi bi-x close-icon" onclick="closemenu()"></i> 
+                <i class="bi bi-list open-icon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="animated-heading">Software Engineer</p><br>
+                <h1 class="animated-heading">
+                    Hi, I'm <span class="highlight">Arsh</span> <br>Ansari from India
+                </h1>                               
+            </div>
+        </div>
+    </div>    
+    <!----about--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About Me (2).png"> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dynamic and results-oriented individual with a strong foundation in C++, Data Structures, and Algorithms (DSA), complemented by experience in SEO and digital marketing. I have developed efficient software solutions, including calculators, games, and task management applications, leveraging Object-Oriented Programming (OOP) principles to ensure scalability and performance. My expertise includes optimizing digital campaigns, improving search engine rankings, and creating engaging content using tools like Google Analytics and Search Console.
+
+                       <br> As a passionate problem-solver, I thrive on crafting innovative solutions and delivering impactful results. My hands-on experience spans software development, digital marketing, and project management, allowing me to approach challenges with a versatile skill set. Whether it’s writing clean, maintainable code or optimizing online strategies for maximum engagement, I am committed to making a meaningful difference in every project I undertake.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('cert-courses')">Certifications and Courses</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C/C++</span><br> Proficient in C/C++ programming, focusing on efficient algorithms, memory management, and object-oriented design through various practical projects.</li>
+                            <li><span>Web Developement</span><br> Skilled in creating responsive websites using HTML, CSS, and JavaScript, with a focus on dark mode, mobile responsiveness, and interactive features.</li>
+                            <li><span>Data Structures and Algorithms</span><br> Strong expertise in data structures and algorithms, with hands-on experience solving 220+ LeetCode problems and implementing algorithms from scratch.</li>
+                            <li><span>Search Engine Optimization (SEO)</span><br> Experienced in optimizing websites for search engines, ensuring high performance and visibility through keyword research, on-page SEO, and content optimization.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>C++ Developer Intern at CodSoft</span><br> Applied Object-Oriented Programming (OOP) and Data Structures & Algorithms (DSA) concepts in developing a calculator, number-guessing game, and to-do list applications using C++. <br><a href="./images/Certificates/CodSoft Certificate.pdf" class="small-button">Click Me</a> </li>
+                            <li><span>SEO Intern at Apex Computer and Graphics</span><br> Executed SEO optimization, digital marketing strategies, content creation, and performance monitoring using tools like Google Analytics, contributing to enhanced campaign effectiveness and audience reach.<br><a href="" class="small-button">Click Me</a></li>
+                            <li><span>Youth Officer Intern at Pawzz</span><br> Led youth engagement campaigns, organized events, and enhanced leadership and teamwork skills through impactful community projects.<br><a href="./images/Certificates/Cert - Arsh Ansari - Pawzz.pdf" class="small-button">Click Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>National Institute of Technology Warangal</span><br> Integrated MS Mathematics<br> <b>Current CGPA:- 8.73</b><br> 2022-Present</li>
+                            <li><span>National Institute of Technology Warangal</span><br> Minor Degree in B.Tech Computer Science and Engineering<br> <b>Current CGPA:- 8</b><br> 2024-present</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="cert-courses">
+                        <ul>
+                            
+                            <li><span>Mastering C++ Course from Udemy</span><br> October 2023<br> <a href="./images/courses/Udemy Certificate.pdf" class="smallest-button">Click Me</a> <br></li>
+                            <li><span>SymPy Course from NITW</span><br> Grade :-A<br> 2022-2023 (Semester-2) <br></li>
+                            <li><span>C language Course (CPPS) from NITW</span><br> Grade :-S<br> 2023-2024 (Semester-3)</li>
+                            <li><span>Artificial Intelligence (AI) from NITW</span><br> 2023-2024 (Semester-4)</li>
+                            <li><span>Data Structures (DS) from NITW (MINOR in CSE) </span><br> 2024-2025 (Semester-5)</li>
+                            <li><span>MATLAB Certifications Onramp</span><br> 2024<br>
+                                <ul style="list-style: square; margin: 15px;"><li> MATLAB Onramp <a href="./images/courses/Matlab Onramp Certificate.pdf" class="smallest-button">Click Me</a><br></li>
+                                    <li> Image Processing Onrammp <a href="./images/courses/Image processing Onramp.pdf" class="smallest-button">Click Me</a> <br></li>
+                                    <li> Signal Processing Onramp <a href="./images/courses/Signal Processing Onramp.pdf" class="smallest-button">Click Me</a> <br></li>
+                                    <li> Deep Learning <a href="./images/courses/Deep learning Onramp.pdf" class="smallest-button">Click Me</a> <br></li>
+                                    <li> Machine Learning <a href="./images/courses/Machine Learning Onramp Certificate.pdf" class="smallest-button">Click Me</a> <br></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Key Statistics</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Programming Skills</h2>
+                    <p><ul style="list-style: none;">
+                       <li>C/C++</li> 
+                       <li>DSA</li>
+                       <li>HTML</li>
+                       <li>CSS</li>
+                       <li>JavaScript</li>
+                       <li>Python</li>
+                       <li>MATLAB</li>
+                    </ul></p>
+                    <a href="https://www.linkedin.com/in/arsh-ansari-317b62271/">learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-crop"></i>
+                    <h2>LeetCode</h2>
+                    <p>LeetCode enthusiast with 220+ problems solved and a global ranking of 464,523, showcasing strong problem-solving skills.</p><br>
+                    <p>Questions Solved: 220+</p>
+                    <p>Ranking: 464,523</p>
+                    <a href="https://leetcode.com/u/ArshAnsari/">learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-file-text"></i>
+                    <h2>Certificates</h2>
+                    <p>Click here to know more about the Certificates</p>
+                    <a href="https://drive.google.com/drive/folders/11jgE4546LD-SyVeBmLWtLq8sXRQpRVhp?usp=drive_link">learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>DNA Mutation</h3>
+                        <p>This is an application which gives the idea about DNA Mutation in living beings while using Poisson Distribution.</p>
+                        <a href="https://github.com/ArshAnsari23122003/DNA_Mutation_Simulation/tree/main"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>This is a app of Library Management (LMS), it includes the critical understandting of Data Structures such as Hash, Array and Stack.</p>
+                        <a href="https://arshansari23122003.github.io/Library-Management-System/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Stock Availability Checker</h3>
+                        <p>This is a app for checking the Stock Availability and Update it using a QR-code deticated to a particular product or inventory item.</p>
+                        <a href="https://github.com/ArshAnsari23122003/Stock-Updation"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/ArshAnsari23122003" class="btn">See More</a>
+        </div>
+    </div>
+    <!--Contact Form-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-envelope"></i> arsh.nitw@gmail.com</p>
+                    <p><i class="bi bi-telephone-fill"></i> 9179107299</p>
+                    <div class="social-icons">
+                        <a href="https://mail.google.com/mail/u/0/#inbox" class="icons"><i class="bi bi-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/arsh-ansari-317b62271/" class="icons"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/?__pwa=1" class="icons"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/ArshAnsari23122003" class="icons"><i class="bi bi-github"></i></a>
+                    </div>
+                    <a href="images/Arsh Resume C++ Developer.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg" class="notification"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Arsh. Made <i class="bi bi-heart-fill"></i> by Arsh Ansari</p>
+        </div>
+    </div>    
+
+<script src="./index.js"></script>
+
+</body>
+</html>
